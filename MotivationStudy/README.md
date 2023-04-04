@@ -13,9 +13,9 @@ Crash reports that satisfy the following two conditions are considered to contai
 1. Containing at least one of the following verbs that indicate GUI operations:`['select', 'choose', 'swipe', 'press', 'type', 'enter', 'open', "insert", "rotate", 'tap', 'click', 'go', 'write', 'input']`
 2. Containing markers indicating the sequence of steps: `"-", ">", "1.XX, 2.XX`
 
-By using the above two conditions, we filter out 5981 crash reports that containing reproducing steps, i.e., The `has_step` column is marked as 1 in the `find_crash_issue_all.xlsx`
+By using the above two conditions, we filter out 5981 crash reports that containing reproducing steps.
 
 ### C. Filtering to get crash reports with the crash stack trace
 Crash reports that at least a line that satisfy the following pattern are considered to contain crash the stack trace: `r".*?\.java:\d+.*?"`
 
-By using the above two conditions, we filter out 3566 crash reports that containing the crash stack trace, i.e., The `has_trace` column is marked as 1 in the `find_crash_issue_all.xlsx`
+By using the above two conditions, we filter out 3566 crash reports that containing the crash stack trace.
